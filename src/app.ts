@@ -12,8 +12,8 @@ const rateLimit = require("express-rate-limit");
 const bodyParser = require('body-parser');
 const port = 3000;
 
-const class_data = JSON.parse(fs.readFileSync('classes.json'));
-const completed_data = JSON.parse(fs.readFileSync('completed.json'));
+const class_data = JSON.parse(fs.readFileSync('./includes/classes.json'));
+const completed_data = JSON.parse(fs.readFileSync('./includes/completed.json'));
 
 app.use(morgan(':date ":method :url" :status :res[content-length] - :response-time ms'));
 
